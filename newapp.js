@@ -84,12 +84,12 @@ function reset() {
     for(let p of [p1,p2]) {
         p.score = 0;
         p.display.textContent = 0;
-        p.display.classList.remove('text-success', 'text-danger', 'bold');
+        p.display.classList.remove('text-success', 'text-danger');
         p.button.classList.remove('disabled');
     }
     isGameOver = false;
     tieBreakerTo = winningScore;
-    winningScoreSelect.classList.remove('bg-danger', 'text-light');
+    winningScoreSelect.classList.remove('bg-danger', 'text-light', 'bold');
     winningScoreSelect.selectedOptions[0].innerText = winningScoreSelect.selectedOptions[0].value;
 }
 
